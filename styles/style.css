@@ -1,0 +1,246 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 50px;
+
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    padding: 0;
+    outline: 0;
+    width: 50%;
+    border-radius: 10px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 0 10px 0 0;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-footer, .modal-header {
+    color: #fff;
+    background-color: #009688;
+    padding: 0.01em 16px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .modal-footer {
+      border-radius: 0 0 10px 10px;
+  }
+
+  .modal p {
+    padding: 0.01em 16px;
+  }
+
+.modal-button {  
+  border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 10px;
+}
+
+.topright {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modal-button:hover, td:hover {
+    color: #000!important;
+    background-color: #ccc!important;
+}
+
+td:hover {
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.calendar {
+    width: 80%;
+    text-align: center;
+    background-color: rgb(243, 242, 242);
+    border-radius: 20px;
+    margin: auto;
+    padding: 1%;
+}
+
+body {
+    background-color: #ccc;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 90%;
+    border-radius: 20px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 1%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+      float: right;
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+  td.active {
+    background-color: lightseagreen;
+    border-radius: 10px;
+  }
+
+  #previous, #next, td {
+    cursor: pointer;
+  }
+
+  .button-container {
+    padding: 1%;
+    float: right;
+  }
+
+  .button-container button:first-child {
+    border-radius:  5px 0 0 5px;
+  }
+
+  .button-container button:last-child {
+    border-radius:  0 5px 5px 0;
+  }
+
+   /* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+} 
